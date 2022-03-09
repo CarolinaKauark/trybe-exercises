@@ -1,4 +1,4 @@
-const peca = prompt("").toLowerCase;
+const peca = 'REI'.toLowerCase();
 
 switch(peca){
     case 'bispo':
