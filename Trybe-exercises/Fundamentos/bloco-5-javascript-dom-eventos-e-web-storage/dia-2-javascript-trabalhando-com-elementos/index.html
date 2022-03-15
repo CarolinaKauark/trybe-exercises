@@ -114,9 +114,38 @@
             main.appendChild(h3);
         }
 
-        
+        //2.1
+        h1.classList.add('title');
+        // const title = document.querySelector('h1');
+        // title.className = 'title';
 
+        //2.2
+        let todasH3 = document.querySelectorAll('h3');
+
+        for (let i = 0; i < todasH3.length; i+=1){
+            todasH3[i].className = 'description';
+        }
+
+        //2.3
+        //main.removeChild(sectionLeft);
+
+        //2.4
+        sectionRight.style.marginRight = 'auto';
+        // const sectionRightContent = document.getElementsByClassName('right-content')[0];
+        // sectionRightContent.style.marginRight='auto';
+
+        //2.5
+        section.parentNode.style.backgroundColor = 'green';
+    //     const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+    //   sectionCenterContent.parentNode.style.backgroundColor = 'green';
+
+        //2.6
+        listNorder.lastElementChild.remove();
+        listNorder.lastElementChild.remove();
+
+      
       // COLOQUE SEU CÓDIGO AQUI
+
     </script>
   </body>
 </html>
