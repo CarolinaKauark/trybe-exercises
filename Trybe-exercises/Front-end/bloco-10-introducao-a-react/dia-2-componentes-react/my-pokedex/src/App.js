@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="Pokemons">
+      <h1>Pokedex</h1>
       {pokemons.map((pokemon) => <GeraCartaPokemon objPokemon = {pokemon} key={pokemon.name} />)}
     </div>
   );
