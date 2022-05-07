@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
@@ -7,7 +8,7 @@ class GeraCartaPokemon extends React.Component {
         let {name, type, averageWeight, image } = this.props.objPokemon;
         return (
             <div className = "pokemon">
-                <h1>{name}</h1>
+                <h2>{name}</h2>
                 <p>{type}</p>
                 <p>{averageWeight.value} {averageWeight.measurementUnit}</p>
                 <img src={image} alt={name}/>
@@ -15,6 +16,13 @@ class GeraCartaPokemon extends React.Component {
         );
     }
 
+}
+
+GeraCartaPokemon.propTypes = {
+    name: PropTypes.string,
+    type: PropTypes.string,
+    image: PropTypes.string,
+    averageWeight: PropTypes.object
 }
 
 export default GeraCartaPokemon;
